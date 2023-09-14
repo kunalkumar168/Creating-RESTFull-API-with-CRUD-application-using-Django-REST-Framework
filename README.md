@@ -92,61 +92,11 @@ http http://127.0.0.1:8000/api/v1/movies/1/ "Authorization: Bearer eyJhbGciOiJIU
 ```
 we get the all the movie as :
 
-```
-HTTP/1.1 200 OK
-Allow: GET, POST, HEAD, OPTIONS
-Content-Length: 484
-Content-Type: application/json
-Date: Thu, 14 Sep 2023 06:20:34 GMT
-Referrer-Policy: same-origin
-Server: WSGIServer/0.2 CPython/3.9.12
-Vary: Accept
-X-Content-Type-Options: nosniff
-X-Frame-Options: DENY
+![All Movies](https://github.com/kunalkumar168/Creating-RESTFull-API-with-CRUD-application-in-Django-REST-Framework/blob/main/images/AllMovies.png)
 
-{
-    "count": 5,
-    "next": null,
-    "previous": null,
-    "results": [
-        {
-            "creator": "USER123NAME",
-            "genre": "Rom-Com",
-            "id": 5,
-            "title": "La La Land",
-            "year": 2016
-        },
-        {
-            "creator": "USER123NAME",
-            "genre": "Action/Comedy",
-            "id": 4,
-            "title": "Deadpool",
-            "year": 2016
-        },
-        {
-            "creator": "USER123NAME",
-            "genre": "Action",
-            "id": 3,
-            "title": "Avatar",
-            "year": 2022
-        },
-        {
-            "creator": "USER123NAME",
-            "genre": "Action",
-            "id": 2,
-            "title": "Avengers : Endgame",
-            "year": 2019
-        },
-        {
-            "creator": "USER123NAME",
-            "genre": "Action",
-            "id": 1,
-            "title": "Avengers : Endgame",
-            "year": 2019
-        }
-    ]
-}
-```
+If we want to see just one movie out of all, we can do :
+
+![One Movies](https://github.com/kunalkumar168/Creating-RESTFull-API-with-CRUD-application-in-Django-REST-Framework/blob/main/images/Movies1.png)
 
 ## Create users and Tokens
 ----------------------
@@ -215,6 +165,8 @@ Page 1 | `http http://127.0.0.1:8000/api/v1/movies/?page=1 "Authorization: Beare
 Page 3 | `http http://127.0.0.1:8000/api/v1/movies/?page=3 "Authorization: Bearer {YOUR_TOKEN}"`
 Page 3 and Page 15 | `http http://127.0.0.1:8000/api/v1/movies/?page=3&page_size=15 "Authorization: Bearer {YOUR_TOKEN}"`
 
+Sample output :
+![All Movies](https://github.com/kunalkumar168/Creating-RESTFull-API-with-CRUD-application-in-Django-REST-Framework/blob/main/images/Pagination.png)
 
 ## Filters
 ----------------------
@@ -229,5 +181,7 @@ Year Range filter | `http http://127.0.0.1:8000/api/v1/movies/?year__gt=2019&yea
 Genre filter | `http http://127.0.0.1:8000/api/v1/movies/?genre="Action" "Authorization: Bearer {YOUR_TOKEN}"`
 Username filter | `http http://127.0.0.1:8000/api/v1/movies/?creator__username="myUsername" "Authorization: Bearer {YOUR_TOKEN}"`
 
+Sample output :
+![All Movies](https://github.com/kunalkumar168/Creating-RESTFull-API-with-CRUD-application-in-Django-REST-Framework/blob/main/images/Filter.png)
 
 
