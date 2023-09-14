@@ -92,11 +92,11 @@ http http://127.0.0.1:8000/api/v1/movies/1/ "Authorization: Bearer eyJhbGciOiJIU
 ```
 we get the all the movie as :
 
-![All Movies](https://github.com/kunalkumar168/Creating-RESTFull-API-with-CRUD-application-in-Django-REST-Framework/blob/main/images/AllMovies.png)
+![All Movies](https://github.com/kunalkumar168/Creating-RESTFull-API-with-CRUD-application-in-Django-REST-Framework/blob/main/images/AllMovies.png?raw=true)
 
 If we want to see just one movie out of all, we can do :
 
-![One Movies](https://github.com/kunalkumar168/Creating-RESTFull-API-with-CRUD-application-in-Django-REST-Framework/blob/main/images/Movies1.png)
+![One Movies](https://github.com/kunalkumar168/Creating-RESTFull-API-with-CRUD-application-in-Django-REST-Framework/blob/main/images/Movies1.png?raw=true)
 
 ## Create users and Tokens
 ----------------------
@@ -166,7 +166,7 @@ Page 3 | `http http://127.0.0.1:8000/api/v1/movies/?page=3 "Authorization: Beare
 Page 3 and Page 15 | `http http://127.0.0.1:8000/api/v1/movies/?page=3&page_size=15 "Authorization: Bearer {YOUR_TOKEN}"`
 
 Sample output :
-![All Movies](https://github.com/kunalkumar168/Creating-RESTFull-API-with-CRUD-application-in-Django-REST-Framework/blob/main/images/Pagination.png)
+![Pagination](https://github.com/kunalkumar168/Creating-RESTFull-API-with-CRUD-application-in-Django-REST-Framework/blob/main/images/Pagination.png?raw=true)
 
 ## Filters
 ----------------------
@@ -182,6 +182,6 @@ Genre filter | `http http://127.0.0.1:8000/api/v1/movies/?genre="Action" "Author
 Username filter | `http http://127.0.0.1:8000/api/v1/movies/?creator__username="myUsername" "Authorization: Bearer {YOUR_TOKEN}"`
 
 Sample output :
-![All Movies](https://github.com/kunalkumar168/Creating-RESTFull-API-with-CRUD-application-in-Django-REST-Framework/blob/main/images/Filter.png)
+![Filter](https://github.com/kunalkumar168/Creating-RESTFull-API-with-CRUD-application-in-Django-REST-Framework/blob/main/images/Filter.png?raw=true)
 
 
